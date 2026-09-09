@@ -5,7 +5,7 @@ const CompassEnterprise = () => {
   const [currentView, setCurrentView] = useState('dashboard');
   const [currentUser] = useState({ name: 'Demo User', role: 'program_director' });
   
-  const [programs, setPrograms] = useState([
+  const [programs] = useState([
     {
       id: 'prog_cyber',
       name: 'Cybersecurity & Network Systems',
@@ -49,9 +49,7 @@ const CompassEnterprise = () => {
     }
   ]);
 
-  const [showWizard, setShowWizard] = useState(false);
-  const [wizardStep, setWizardStep] = useState(1);
-  const [selectedProgram, setSelectedProgram] = useState(programs[0].id);
+  const [selectedProgram, setSelectedProgram] = useState('prog_cyber');
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   const progData = programs.find(p => p.id === selectedProgram);
@@ -211,7 +209,7 @@ const CompassEnterprise = () => {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
                 <h1 style={{ margin: 0, fontSize: '28px', fontWeight: '700' }}>Programs</h1>
-                <button onClick={() => setShowWizard(true)} style={{ padding: '8px 16px', background: colors.primary, color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '500' }}>
+                <button style={{ padding: '8px 16px', background: colors.primary, color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '500' }}>
                   + New Program
                 </button>
               </div>
