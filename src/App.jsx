@@ -261,7 +261,7 @@ const CompassEnterprise = () => {
                     <div style={{ fontSize: '16px', fontWeight: '700' }}>{course.code}</div>
                     <div style={{ fontSize: '13px', color: colors.textAlt, marginTop: '4px' }}>{course.name}</div>
                     <div style={{ fontSize: '12px', color: colors.textAlt, marginTop: '8px' }}>👨‍🏫 {course.instructor}</div>
-                    <div style={{ fontSize: '12px', color: colors.textAlt', marginTop: '4px' }}>👥 {course.students} | 📖 {course.credits} credits</div>
+                    <div style={{ fontSize: '12px', color: colors.textAlt, marginTop: '4px' }}>👥 {course.students} | 📖 {course.credits} credits</div>
                     <div style={{ fontSize: '12px', color: colors.textAlt, marginTop: '8px' }}>🎓 {course.clos.length} CLOs</div>
                   </div>
                 ))}
@@ -315,7 +315,7 @@ const CompassEnterprise = () => {
                 </div>
               ) : (
                 <div style={{ background: colors.surface, padding: '40px', borderRadius: '12px', border: `1px solid ${colors.border}`, textAlign: 'center' }}>
-                  <div style={{ fontSize: '14px', color: colors.textAlt' }}>Select a course to view CLO-to-PLO mapping</div>
+                  <div style={{ fontSize: '14px', color: colors.textAlt }}>Select a course to view CLO-to-PLO mapping</div>
                 </div>
               )}
             </div>
